@@ -1,0 +1,9 @@
+{
+    "description": "A template that demonstrates the main features of Groome.",
+    "context": {
+        "project": "hello",
+        "encoding": "utf-8",
+        "author": "Mustachioed Maven",
+        "year": 2012
+    }
+}
