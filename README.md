@@ -6,6 +6,7 @@ Python command-line script.
 
 [This project is still under construction and not yet usable.]
 
+
 What is this?
 -------------
 
@@ -34,3 +35,16 @@ This project template will have the following features:
   [doctest's unittest API](http://docs.python.org/library/doctest.html#unittest-api).
 
 * TODO
+
+
+Details
+-------
+
+Rendering the template with the sample configuration file generates a
+project called "Pizza."  You can see this project in the expected directory.
+
+The project exposes a command-line script which you can try by running
+the following from the rendered project directory:
+
+    $ python runpizza.py
+    Output...
