@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-# Copyright (C) 2011 John Doe.  All rights reserved.
+# Copyright (C) 2011-2013 Chris Jerdonek. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -28,20 +28,13 @@
 #
 
 """
-Exposes an option parser that is a subclass of optparse.OptionParser.
+Supports command-line parsing.
 
 """
 
 from __future__ import absolute_import
 
-import logging
-# The optparse module is deprecated in Python 2.7 in favor of argparse.
-# However, argparse is not available in Python 2.6.
-import optparse
-import sys
-
-
-_log = logging.getLogger(__name__)
+import argparse
 
 
 class UsageError(Exception):
@@ -52,19 +45,24 @@ class UsageError(Exception):
     pass
 
 
-# We subclass optparse.OptionParser to customize the behavior of error().
-# The base class's implementation of error() prints the usage string
-# and exits with status code 2.
-class OptionParser(optparse.OptionParser):
+class Option(tuple):
+    """
+    Encapsulates a command option (e.g. "-h" and "--help", or "--run-tests").
+
+    """
+    def display(self, glue):
+        return glue.join(self)
+
+
+class ArgParser(argparse.ArgumentParser):
 
     def error(self, message):
         """
         Handle an error occurring while parsing command arguments.
 
-        This method overrides the OptionParser base class's error().  The
-        OptionParser class requires that this method either exit or raise
-        an exception.
+        This method overrides the base class's error(), which prints a
+        usage message to standard error and terminates the program with
+        a status code of 2.
 
         """
         raise UsageError(message)
-
