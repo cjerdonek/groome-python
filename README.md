@@ -1,9 +1,19 @@
 Groome-Python
 =============
 
-A Groome project template for a Python script.
+A [Groome](http://cjerdonek.github.com/groome/) project template for a
+Python command-line script.
 
-This is still under construction.
+[This project is still under construction and not yet usable.]
+
+What is this?
+-------------
+
+The purpose of this project is to provide a Groome template for a Python
+project for the following situation:
+
+* the package is pure Python (e.g. no C extensions)
+* the project exposes a command-line script
 
 
 Features
