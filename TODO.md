@@ -4,11 +4,13 @@ TODO
 Milestones
 ----------
 
-* Flesh out the "expected" project in `template/expected`.
+* Flesh out the "expected" project in `template/expected`.  Use Molt as the
+  model project and refactor Molt when I see that improvements can be made.
 
 Tasks
 -----
 
+* Share code between runpizza.py and __main__.py
 * Stub out README.
 * Stub out HISTORY.
 * Stub out a command-line script (which can later include a run-test command).

@@ -13,8 +13,12 @@ What is this?
 The purpose of this project is to provide a Groome template for a Python
 project for the following situation:
 
-* the package is pure Python (e.g. no C extensions)
-* the project exposes a command-line script
+* the Python project is pure Python (e.g. no C extensions)
+* the project should expose a command-line script
+
+The project template is based on the structure of the code base for
+[Molt](http://cjerdonek.github.com/molt/), which is the reference
+implementation for rendering Groome templates.
 
 
 Features
@@ -40,11 +44,19 @@ This project template will have the following features:
 Details
 -------
 
-Rendering the template with the sample configuration file generates a
-project called "Pizza."  You can see this project in the expected directory.
+This section describes details of the rendered project and how to use it
+once rendered.
 
-The project exposes a command-line script which you can try by running
+Rendering the template with the sample configuration file creates a project
+called "Pizza."  You can see this project in the project directory
+`template/expected/`.
+
+Pizza exposes a command-line script which you can try by running
 the following from the rendered project directory:
 
     $ python runpizza.py
-    Output...
+    made pizza: ingredients
+
+This is essentially a short-cut for running:
+
+    $ python -m pizza.scripts.pizza
