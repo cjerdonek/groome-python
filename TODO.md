@@ -10,6 +10,7 @@ Milestones
 Tasks
 -----
 
+* Remove the project_types/default after checking for useful code.
 * Share code between runpizza.py and __main__.py
 * Stub out README.
 * Stub out HISTORY.
