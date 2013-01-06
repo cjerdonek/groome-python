@@ -28,14 +28,16 @@ Project Features
 
 The project template comes with the following features already implemented:
 
-* command-line argument parsing using
-  [argparse](http://docs.python.org/2/library/argparse.html) with:
+* command-line argument parsing using the
+  [argparse](http://docs.python.org/library/argparse.html) module.
+  Initial supported options include:
   * `--license` display license info
   * `-h, --help`
   * TODO
 * ready to deploy to [PyPI](http://pypi.python.org/pypi) using
   [setup.py](http://docs.python.org/library/distutils.html)
-* command-line help,
+* logging using the
+  [logging](http://docs.python.org/library/logging.html) module,
 
 * options for verbose and silent output,
 
@@ -53,19 +55,23 @@ The project template comes with the following features already implemented:
 Project Details
 ---------------
 
-This section describes some of the details of the rendered project and how
-to navigate around it once rendered.
+This section describes details of the project you get when rendering.
 
-Rendering the template with the sample configuration file creates a project
-called "Pizza."  You can see this project in the project directory
-`template/expected/`.
+Rendering with the sample configuration file creates a project called "Pizza."
+You can see this project in the project directory `template/expected/`.
 
-Pizza exposes a command-line script which you can run when developing
-the following from the rendered project directory:
+Pizza exposes a command-line script which you can run as follows:
 
-    $ python runpizza.py
-    made pizza: ingredients
+    $ python runpizza.py tomatoes garlic
+    input: tomatoes, garlic
 
 This is essentially a development convenience for running:
 
-    $ python -m pizza.scripts.pizza
+    $ python -m pizza.scripts.pizza ...
+
+To get help and see all options:
+
+    $ python runpizza.py -h
+    usage: runpizza.py [--run-tests [NAME [NAME ...]]] [--license] [-V] [-v] [-h]
+                       [VALUE [VALUE ...]]
+    ...
