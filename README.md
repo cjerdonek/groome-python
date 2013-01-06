@@ -26,8 +26,13 @@ implementation for rendering Groome templates.
 Project Features
 ----------------
 
-The project template has the following features:
+The project template comes with the following features already implemented:
 
+* command-line argument parsing using
+  [argparse](http://docs.python.org/2/library/argparse.html) with:
+  * `--license` display license info
+  * `-h, --help`
+  * TODO
 * ready to deploy to [PyPI](http://pypi.python.org/pypi) using
   [setup.py](http://docs.python.org/library/distutils.html)
 * command-line help,
