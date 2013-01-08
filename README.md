@@ -11,16 +11,12 @@ What is this?
 -------------
 
 The purpose of this project is to provide a Groome template to kick-start
-a Python project.  The template is tailored to the following situation:
+a Python project.  The template is tailor-made for the following situation:
 
 * the Python project is pure Python (e.g. no C extensions)
 * the project should expose a command-line script
 
-The rendered template is a ready-to-go, working project.
-
-The project template is based on the structure of the code base for
-[Molt](http://cjerdonek.github.com/molt/), which is the reference
-implementation for rendering Groome templates.
+Rendering the template creates a working project that is ready-to-go.
 
 
 Project Features
@@ -28,8 +24,8 @@ Project Features
 
 The project template comes with the following features already implemented:
 
-* command-line argument parsing using the
-  [argparse](http://docs.python.org/library/argparse.html) module.
+* command-line support using
+  [argparse](http://docs.python.org/library/argparse.html).
   Initial supported options include:
   * `--license` display license info
   * `-h, --help`
@@ -57,8 +53,13 @@ Project Details
 
 This section describes details of the project you get when rendering.
 
-Rendering with the sample configuration file creates a project called "Pizza."
-You can see this project in the project directory `template/expected/`.
+The project template is based on the structure of the code base for
+[Molt](http://cjerdonek.github.com/molt/), which is the reference
+implementation for rendering Groome templates.
+
+For discussion purposes, we will use the project created from the sample
+configuration file.  This project is called "Pizza."  You can see it in
+the `template/expected` directory of a source checkout.
 
 Pizza exposes a command-line script which you can run as follows:
 
@@ -72,6 +73,12 @@ This is essentially a development convenience for running:
 To get help and see all options:
 
     $ python runpizza.py -h
-    usage: runpizza.py [--run-tests [NAME [NAME ...]]] [--license] [-V] [-v] [-h]
-                       [VALUE [VALUE ...]]
-    ...
+
+
+Project Organization
+--------------------
+
+    pizza/
+        scripts/
+            # specific to command-line usage (i.e. not needed for API).
+            pizza/

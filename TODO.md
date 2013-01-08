@@ -10,6 +10,7 @@ Milestones
 Tasks
 -----
 
+* Get --run-tests running one substantive test.
 * Stub out use of argparse and document.
 * Remove the project_types/default after checking for useful code.
 * Stub out README.
@@ -18,10 +19,9 @@ Tasks
 * Stub out TODO.
 * Stub out image.
 * Stub out setup.py.
+* Think about what should go in pizza_setup/ and what should go in a
+  separate tools/ directory (or library).
+* Look into how to download developer-specific dependencies.
 
-* Add the ability to "check" the expected directory of a template.
-* Add the ability to "update" the expected directory of a template..
-  This will require adding one or two more options to molt.
 * Switch config file from .json to .yaml.
-* Link to Groome in the README.
 * Add the ability to execute a script after rendering.
