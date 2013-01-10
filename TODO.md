@@ -10,8 +10,8 @@ Milestones
 Tasks
 -----
 
-* Make a GitHub project for the expected directory for Groome-Python:
-  (and link to groome-python in the URL)
+* Try using GitHub task lists:
+  https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments
 * Get --run-tests running one substantive test.
 * Stub out use of argparse and document.
 * Remove the project_types/default after checking for useful code.

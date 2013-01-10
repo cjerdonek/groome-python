@@ -1,0 +1,3 @@
+[submodule "template/expected"]
+	path = template/expected
+	url = git://github.com/cjerdonek/groome-python-expected.git
