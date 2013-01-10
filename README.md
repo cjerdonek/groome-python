@@ -18,7 +18,7 @@ a Python project.  The template is tailored to the following situation:
 * is written in Python 2 and supports Python 3, and
 * uses Git for source control.
 
-Rendered project features include--
+Features of the project after rendering include--
 
 * deployable to [PyPI](http://pypi.python.org/pypi) using
   [setup.py](http://docs.python.org/library/distutils.html),
@@ -34,25 +34,22 @@ Rendered project features include--
 * [Travis CI](http://travis-ci.org/) support for continuous integration, and
 * stubbed out license and documentation files.
 
-Rendering the template creates a project that is working and ready-to-go
-with respect to all of the above.
-
-The project template is based on the structure of the code base for
-[Molt](http://cjerdonek.github.com/molt/), which is the reference
-implementation for rendering Groome templates.
+Rendering the template creates a project that is working and ready-to-go with
+respect to all of the above.  The project template is based on the structure
+of the code base for [Molt](http://cjerdonek.github.com/molt/), which is the
+reference implementation for rendering Groome templates.
 
 
 Using the Project
 -----------------
 
-This section describes in more detail the project you get after rendering.
+This section describes how to start using the project you get after rendering.
 
 For discussion purposes, we use the project created from the sample
-configuration file.  However, all of the following still holds when using
-your own configuration file (with appropriate substitution of names, etc).
-
-The sample project is called "Pizza."  You can see it in the
-`template/expected` directory of the source tree.
+configuration file.  However, all of this holds for any configuration file.
+Only the names will be different.  The sample project is called "Pizza."  You
+can see it in the `template/expected` directory, which is a git submodule
+called [groome-python-expected](https://github.com/cjerdonek/groome-python-expected).
 
 Pizza exposes a command-line script which you can run as follows:
 
