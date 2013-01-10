@@ -4,62 +4,49 @@ Groome-Python
 A [Groome](http://cjerdonek.github.com/groome/) project template for a
 Python command-line script.
 
-[This project is still under construction and not yet usable.]
+[This project is still under construction and is not yet usable.]
 
 
 What is this?
 -------------
 
 The purpose of this project is to provide a Groome template to kick-start
-a Python project.  The template is tailor-made for the following situation:
+a Python project.  The template is tailored to the following situation:
 
-* the Python project is pure Python (e.g. no C extensions)
-* the project should expose a command-line script
-* the project is written in Python 2 and supports Python 3 via
-  [2to3](http://docs.python.org/library/2to3.html)
+* a pure Python project (e.g. no C extensions) that
+* exposes a command-line script,
+* is written in Python 2 and supports Python 3, and
+* uses Git for source control.
 
-Rendering the template creates a working project that is ready-to-go.
+Rendered project features include--
+
+* deployable to [PyPI](http://pypi.python.org/pypi) using
+  [setup.py](http://docs.python.org/library/distutils.html),
+* command-line interface via
+  [argparse](http://docs.python.org/library/argparse.html),
+* [logging](http://docs.python.org/library/logging.html) comes pre-configured,
+* Python 3 supported via [2to3](http://docs.python.org/library/2to3.html),
+* [unit tests](http://docs.python.org/library/unittest.html) and
+  [doctests](http://docs.python.org/library/doctest.html) runnable with
+  a single command,
+* [tox](http://codespeak.net/tox/) support for running tests on all Python
+  versions,
+* [Travis CI](http://travis-ci.org/) support for continuous integration, and
+* stubbed out license and documentation files.
+
+Rendering the template creates a project that is working and ready-to-go
+with respect to all of the above.
 
 The project template is based on the structure of the code base for
 [Molt](http://cjerdonek.github.com/molt/), which is the reference
 implementation for rendering Groome templates.
 
 
-Project Features
-----------------
+Using the Project
+-----------------
 
-The project template comes with the following features already implemented:
+This section describes in more detail the project you get after rendering.
 
-* command-line support using
-  [argparse](http://docs.python.org/library/argparse.html).
-  Initially implemented options include:
-  * run project tests
-  * display license info
-  * display version info
-  * display help
-  * run in verbose mode
-* ready to deploy to [PyPI](http://pypi.python.org/pypi) using
-  [setup.py](http://docs.python.org/library/distutils.html)
-* logging using the
-  [logging](http://docs.python.org/library/logging.html) module,
-
-* options for verbose and silent output,
-
-* automatic unit test and doctest discovery,
-
-* use of Python's [unittest](http://docs.python.org/library/unittest.html)
-  and [doctest](http://docs.python.org/library/doctest.html) modules, and
-
-* integration of doctest with unittest via
-  [doctest's unittest API](http://docs.python.org/library/doctest.html#unittest-api).
-
-* TODO
-
-
-Project Details
----------------
-
-This section describes the project you get after rendering in more detail.
 For discussion purposes, we use the project created from the sample
 configuration file.  However, all of the following still holds when using
 your own configuration file (with appropriate substitution of names, etc).
