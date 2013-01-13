@@ -10,13 +10,19 @@ Milestones
 Tasks
 -----
 
+* Get long_description converted to ReST in setup.py.
 * Stub out README.
 * Stub out HISTORY.
 * Stub out TODO.
-* Add Travis CI image to README.
-* Get long_description converted to ReST in setup.py.
-* Start going through setup.py.
-* Evaluate the use of a pizza_setup package.
+* Rename setup\_description.rst to setup\_long_desc.rst.
+* Add to setup_description.rst header comment that the file is the
+  long_description argument to setup.py's setup().  It should be checked
+  into source control and be part of the distribution so that setup()
+  can be passed the long_description argument even without pandoc (i.e.
+  for non-maintainers, etc).
+* Add initial 2to3 support.
+* Add an image to the README.
+* Continue going through setup.py.
 * Try using GitHub task lists:
   https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments
 * Get --run-tests running one substantive test.

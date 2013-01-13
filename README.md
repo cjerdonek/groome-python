@@ -46,27 +46,15 @@ Using the Project
 This section describes how to start using the project you get after rendering.
 
 For discussion purposes, we use the project created from the sample
-configuration file.  However, all of this holds for any configuration file.
-Only the names will be different.  The sample project is called "Pizza."  You
+configuration file.  However, all of this holds for any configuration file;
+only the names will be different.  The sample project is called "Pizza."  You
 can see it in the `template/expected` directory, which is a git submodule
-called [groome-python-expected](https://github.com/cjerdonek/groome-python-expected).
+that we maintain in a separate repo called
+[groome-python-expected](https://github.com/cjerdonek/groome-python-expected).
+It is an actual working project! :)
 
-Pizza exposes a command-line script which you can run as follows:
-
-    $ python runpizza.py tomatoes garlic
-    input: tomatoes, garlic
-
-This script is essentially a development convenience for running:
-
-    $ python -m pizza.scripts.pizza ...
-
-To get help and see all options:
-
-    $ python runpizza.py --help
-
-To run project tests (which are already stubbed out):
-
-    $ python runpizza.py --run-tests
+Check out the [Pizza](https://github.com/cjerdonek/groome-python-expected)
+project page for details on what you get and how to use it.
 
 
 Project Organization
