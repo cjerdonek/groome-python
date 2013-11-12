@@ -15,8 +15,9 @@ a Python project.  The template is tailored to the following situation:
 
 * a pure Python project (e.g. no C extensions) that
 * exposes a command-line script,
-* is written in Python 2 and supports Python 3, and
-* uses Git for source control.
+* is written in Python 2 and supports Python 3,
+* uses Git for source control, and
+* could be potentially large or complex.
 
 Features of the project after rendering include--
 
